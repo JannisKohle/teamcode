@@ -24,7 +24,7 @@ XyZ
 
 ## How to use the api:
 
-These are just some of the most important and useful things: (```METHOD ENDPOINT REQ_BODY```)
+These are just some of the most important and useful things: (```VERB ENDPOINT REQ_BODY```)
 
 - Create an account: ```POST /accounts {"name": "Karl", "info": "My github: xyz"}```
 - Invite a created account (ADMIN ONLY): ```PATCH /accounts/:accountName {"invited": true}```
