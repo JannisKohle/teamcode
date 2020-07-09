@@ -1,0 +1,19 @@
+{
+  "name": "teamcode",
+  "version": "1.0.0",
+  "description": "A chatting tool for teams that **doesn't have a frontend** and is **not usable yet**",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JannisKohle/teamcode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JannisKohle/teamcode/issues"
+  },
+  "homepage": "https://github.com/JannisKohle/teamcode#readme"
+}
