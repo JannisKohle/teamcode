@@ -17,7 +17,7 @@ other admins can't remove the owner's rights (or more).
 => 192.168.0.serverIp = 192.168.0.ownerIp
 
 With teamcode, you can create rooms in which you can
-write messages and uploud files or folders. You can also
+write messages that can even contain files or folders. You can also
 create private rooms, which only some people can access.
 You need to be an admin to create public and private rooms.
 
@@ -61,3 +61,30 @@ If you're an admin, you can give someone else admin rights with a patch request 
     "isAdmin": false
 }
 ```
+In this example, Friedrich is using two computers on which he has logged into the teamcode server.
+
+### A room:
+
+```json
+{
+    "name": "frontend",
+    "id": "ROOM174026",
+    "isPrivate": true,
+    "members": ["FriedrichDasBlatt", "DerBetonKlotzAusMuenchen"],
+    "messages": ["MESSAGE5184682", "MESSAGE175250", "..."]
+}
+```
+
+### A message:
+
+```json
+{
+    "id": "MESSAGE175250",
+    "text": "Hows evrything goijn? Sorrryf or my splelign. This is my neew versiuon of ...",
+    "file": null,
+    "folder": "FOLDER9910746",
+    "year/month/day": "2020/09/32",
+    "writer": "DerBetonKlotzAusMuenchen"
+}
+```
+Somewhere on the server there is a normal folder called FOLDER9910746
