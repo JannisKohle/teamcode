@@ -88,3 +88,12 @@ In this example, Friedrich is using two computers on which he has logged into th
 }
 ```
 Somewhere on the server there is a normal folder called FOLDER9910746
+
+## A list of api endpoints, just for me:
+
+- ```/accounts```
+- ```/accounts/:username```
+- ```/rooms```
+- ```/rooms/:roomId```
+- ```/privateRooms```
+- ```/privateRooms/:roomId```
