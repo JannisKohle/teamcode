@@ -28,13 +28,15 @@ account for *this* teamcode server, because nothing is
 stored in a cloud - just on the server running teamcode.
 
 You can create an account with a post request to ```/accounts```.
-The request body needs to look something like this: ```?```.
+The request body needs to look something like this: ```{"username": ":username", "password": ":password"}```.
 
 Then, any admin can invite you to private rooms. If you want
 to become admin too, you must ask another admin to give you
 the rights.
 
 If you're an admin, you can give someone else admin rights with a patch request to ```/accounts/:username``` with the body ```{"isAdmin": true}```.
+
+To invite somebody to a private room, do a patch request to ```/privateRooms/:roomId``` with this body: ```{"newMember": ""}```
 
 ... ... ... ... ... ... ... ... ...
 
@@ -95,5 +97,7 @@ Somewhere on the server there is a normal folder called FOLDER9910746
 - ```/accounts/:username```
 - ```/rooms```
 - ```/rooms/:roomId```
+- ```/rooms/:roomId/:messageId```
 - ```/privateRooms```
 - ```/privateRooms/:roomId```
+- ```/privateRooms/:roomId/:messageId```
