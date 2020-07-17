@@ -95,4 +95,5 @@ Somewhere on the server there is a normal folder called FOLDER9910746
 - ```/rooms```
 - ```/rooms/:roomId```
 - ```/rooms/:roomId/members```
+- ```/rooms/:roomId/messages```
 - ```/rooms/:roomId/messages/:messageId```
