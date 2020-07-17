@@ -36,8 +36,6 @@ the rights.
 
 If you're an admin, you can give someone else admin rights with a patch request to ```/accounts/:username``` with the body ```{"isAdmin": true}```.
 
-To invite somebody to a private room, do a patch request to ```/privateRooms/:roomId``` with this body: ```{"newMember": ""}```
-
 ... ... ... ... ... ... ... ... ...
 
 ## What the data looks like:
@@ -72,7 +70,6 @@ In this example, Friedrich is using two computers on which he has logged into th
     "name": "frontend",
     "id": "ROOM174026",
     "isPrivate": true,
-    "members": ["FriedrichDasBlatt", "DerBetonKlotzAusMuenchen"],
     "messages": ["MESSAGE5184682", "MESSAGE175250", "..."]
 }
 ```
@@ -97,7 +94,5 @@ Somewhere on the server there is a normal folder called FOLDER9910746
 - ```/accounts/:username```
 - ```/rooms```
 - ```/rooms/:roomId```
-- ```/rooms/:roomId/:messageId```
-- ```/privateRooms```
-- ```/privateRooms/:roomId```
-- ```/privateRooms/:roomId/:messageId```
+- ```/rooms/:roomId/members```
+- ```/rooms/:roomId/messages/:messageId```
